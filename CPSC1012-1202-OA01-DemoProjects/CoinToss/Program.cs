@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*  Purpose:    Coin Toss Game
+ * 
+ *  Input:      User guess (0 for head, 1 for tail)
+ *  
+ *  Process:    Determine if the user guess is correct
+ *  
+ *  Output:     A message indicating if the user guess is correct
+ * 
+ * */
+using System;
 
 namespace CoinToss
 {
