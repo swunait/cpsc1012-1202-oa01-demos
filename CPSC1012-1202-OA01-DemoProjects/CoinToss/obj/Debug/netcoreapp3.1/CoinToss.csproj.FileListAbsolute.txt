@@ -1,0 +1,13 @@
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\bin\Debug\netcoreapp3.1\CoinToss.exe
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\bin\Debug\netcoreapp3.1\CoinToss.deps.json
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\bin\Debug\netcoreapp3.1\CoinToss.runtimeconfig.json
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\bin\Debug\netcoreapp3.1\CoinToss.runtimeconfig.dev.json
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\bin\Debug\netcoreapp3.1\CoinToss.dll
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\bin\Debug\netcoreapp3.1\CoinToss.pdb
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\obj\Debug\netcoreapp3.1\CoinToss.csprojAssemblyReference.cache
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\obj\Debug\netcoreapp3.1\CoinToss.AssemblyInfoInputs.cache
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\obj\Debug\netcoreapp3.1\CoinToss.AssemblyInfo.cs
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\obj\Debug\netcoreapp3.1\CoinToss.csproj.CoreCompileInputs.cache
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\obj\Debug\netcoreapp3.1\CoinToss.dll
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\obj\Debug\netcoreapp3.1\CoinToss.pdb
+C:\Users\Sam Wu\source\repos\CPSC1012-1202-OA01-demos\CPSC1012-1202-OA01-DemoProjects\CoinToss\obj\Debug\netcoreapp3.1\CoinToss.genruntimeconfig.cache
