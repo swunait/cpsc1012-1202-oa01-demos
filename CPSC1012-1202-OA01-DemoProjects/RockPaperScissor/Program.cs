@@ -12,7 +12,7 @@
  *                  - computerHand is rock then tie game
  *                  - computerHand is paper then player loses
  *                  - computerHand is scissor then player wins
- *              2) playerHand is paper
+ *              3) playerHand is paper
  *                  - computerHand is rock then player wins
  *                  - computerHand is paper then tie game
  *                  - computerHand is scissor then player loses

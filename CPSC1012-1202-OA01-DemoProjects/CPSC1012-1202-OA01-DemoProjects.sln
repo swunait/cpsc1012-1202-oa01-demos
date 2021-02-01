@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYear", "LeapYear\LeapYe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissor", "RockPaperScissor\RockPaperScissor.csproj", "{3C48A2AD-61AA-4DCA-96AA-6F21D40E7644}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoldOnToYourHats", "HoldOnToYourHats\HoldOnToYourHats.csproj", "{D7D0C4F8-A47B-49E2-B012-3E3CCFEEDE0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{3C48A2AD-61AA-4DCA-96AA-6F21D40E7644}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C48A2AD-61AA-4DCA-96AA-6F21D40E7644}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C48A2AD-61AA-4DCA-96AA-6F21D40E7644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D0C4F8-A47B-49E2-B012-3E3CCFEEDE0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D0C4F8-A47B-49E2-B012-3E3CCFEEDE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D0C4F8-A47B-49E2-B012-3E3CCFEEDE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D0C4F8-A47B-49E2-B012-3E3CCFEEDE0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{59960F38-A953-4F31-81AC-DE1A3B2482E9} = {DC2B6809-8C1D-41A5-80E5-8C26246E018A}
 		{473E9953-4EE8-4825-B8BA-6736B520C5B0} = {DC2B6809-8C1D-41A5-80E5-8C26246E018A}
 		{3C48A2AD-61AA-4DCA-96AA-6F21D40E7644} = {DC2B6809-8C1D-41A5-80E5-8C26246E018A}
+		{D7D0C4F8-A47B-49E2-B012-3E3CCFEEDE0B} = {DC2B6809-8C1D-41A5-80E5-8C26246E018A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {371152C0-7764-447D-9046-16D89BF48283}

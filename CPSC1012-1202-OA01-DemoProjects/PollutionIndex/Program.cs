@@ -4,6 +4,9 @@ namespace PollutionIndex
 {
     class Program
     {
+        // Averages input pollution level readings and compare to a cutoff
+        // value for possible hazardous condition. Display a warning message
+        // if the index is greater than or equal to the given cutoff value.
         static void Main(string[] args)
         {
             const double CUTOFF = 50.0;      // Cutoff for hazardous condition
@@ -19,15 +22,15 @@ namespace PollutionIndex
             index = (level1 + level2 + level3) / 3;
 
             // Check for hazardous condition.
-            //if ___________________
-            //{
-            //    Console.WriteLine("Hazardous condition");
+            if (index >= CUTOFF )
+            {
+                Console.WriteLine("Hazardous condition");
 
-            //}    
-            //___________________
-            //{
-            //    Console.WriteLine("Non-hazardous condition");
-            //}
+            }
+            else
+            {
+                Console.WriteLine("Non-hazardous condition");
+            }
 
         }
     }
