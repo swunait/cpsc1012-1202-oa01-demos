@@ -79,7 +79,37 @@ namespace LoopsProblems1
             // Call the Question1 void method
             // Question1();
             // Question2();
-            Question3();
+            // Question3();
+            const int SentinelValue = 0;
+            int menuInput;
+
+            do
+            {
+                Console.WriteLine("1. Question 1");
+                Console.WriteLine("2. Question 2");
+                Console.WriteLine("3. Question 3");
+                Console.WriteLine("0. Exit Program");
+                menuInput = int.Parse(Console.ReadLine()); 
+                switch (menuInput) 
+                { 
+                    case 1: 
+                        Question1();  
+                        break;
+                    case 2:
+                        Question2();
+                        break;
+                    case 3:
+                        Question3();
+                        break;
+                    case 0:
+                        Console.WriteLine("Good-bye");
+                        break;
+                    default:
+                        Console.WriteLine("Error! Invalid input value. Enter a value between 0-3.");
+                        break; 
+                }
+
+            } while (menuInput != SentinelValue);
 
         }
     }
