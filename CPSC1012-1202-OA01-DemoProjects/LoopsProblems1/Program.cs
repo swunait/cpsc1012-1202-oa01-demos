@@ -74,6 +74,77 @@ namespace LoopsProblems1
             }
         }
 
+        static void Question21()
+        {
+            int currentDayOfMonth; // loop control variable
+            int currentDayOfWeek = 0;
+            int daysInMonth;
+            string dayOfWeek = "";
+            //int days = 0;
+
+            Console.WriteLine("How many days are in the month? ");
+            daysInMonth = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Which day of the week does the first of the month land on? ");
+            dayOfWeek = Console.ReadLine();
+            int firstDayOfWeek = 0;
+            switch (dayOfWeek.ToLower())
+            {
+                case "sun":
+                    firstDayOfWeek = 0;
+                    break;
+                case "mon":
+                    firstDayOfWeek = 1;
+                    break;
+                case "tue":
+                    firstDayOfWeek = 2;
+                    break;
+                case "wed":
+                    firstDayOfWeek = 3;
+                    break;
+                case "thu":
+                    firstDayOfWeek = 4;
+                    break;
+                case "fri":
+                    firstDayOfWeek = 5;
+                    break;
+                case "sat":
+                    firstDayOfWeek = 6;
+                    break;
+                default:
+                    break;
+            }
+
+            bool startPrintingDayOfMonth = false;
+            Console.WriteLine($"{"Sun",5}{"Mon",5}{"Tue",5}{"Wed",5}{"Thu",5}{"Fri",5}{"Sat",5}");
+            for (currentDayOfMonth = 1; currentDayOfMonth <= daysInMonth; )
+            {
+                // Determine if we reached the first day of the week of the month
+                if (!startPrintingDayOfMonth && currentDayOfWeek == firstDayOfWeek)
+                {
+                    startPrintingDayOfMonth = true;
+                }
+
+                if (!startPrintingDayOfMonth)
+                {
+                    Console.Write("     ");
+                }
+                else
+                {
+                    Console.Write($"{currentDayOfMonth,5}");
+                    currentDayOfMonth++;
+                }
+                currentDayOfWeek++;
+                if (currentDayOfWeek > 6)
+                {
+                    currentDayOfWeek = 0;
+                    Console.WriteLine();
+                }
+
+            }
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             // Call the Question1 void method
@@ -88,12 +159,13 @@ namespace LoopsProblems1
                 Console.WriteLine("1. Question 1");
                 Console.WriteLine("2. Question 2");
                 Console.WriteLine("3. Question 3");
+                Console.WriteLine("4. Question 2.1");
                 Console.WriteLine("0. Exit Program");
-                menuInput = int.Parse(Console.ReadLine()); 
-                switch (menuInput) 
-                { 
-                    case 1: 
-                        Question1();  
+                menuInput = int.Parse(Console.ReadLine());
+                switch (menuInput)
+                {
+                    case 1:
+                        Question1();
                         break;
                     case 2:
                         Question2();
@@ -101,12 +173,15 @@ namespace LoopsProblems1
                     case 3:
                         Question3();
                         break;
+                    case 4:
+                        Question21();
+                        break;
                     case 0:
                         Console.WriteLine("Good-bye");
                         break;
                     default:
                         Console.WriteLine("Error! Invalid input value. Enter a value between 0-3.");
-                        break; 
+                        break;
                 }
 
             } while (menuInput != SentinelValue);
