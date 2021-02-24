@@ -34,15 +34,41 @@ namespace FilledRectanglePattern
 {
     class Program
     {
+        // Define a new method named PromptForInteger that prompts the user to enter 
+        // an integer value and return it. If the input value is not value,
+        // re-prompt the user to enter the value again until it is valid.
+        //      Input: prompt - the message to show the user
+        //      Return: the integer value entered by the user
+        static int PromptForInteger(string message)
+        {
+            int integerValue = 0;
+            bool validInput = false;
+
+            while (!validInput)
+            {
+                Console.WriteLine(message);
+                validInput = int.TryParse(Console.ReadLine(), out integerValue);
+                if (!validInput)
+                {
+                    Console.WriteLine("Invalid input! You must enter an integer value for the answer");
+                }
+            }
+
+            return integerValue;
+        }
+
         static void Main(string[] args)
         {
             // Prompt and read in the rectangle symbols, the number of rows, and columns
             Console.Write("Enter the symbol to print the rectangle with: ");
             char rectangleSymbol = char.Parse(Console.ReadLine());
-            Console.Write("Enter the number of rows for the rectangle: ");
-            int rows = int.Parse(Console.ReadLine());
-            Console.Write("Etner the number of columns for the rectangle: ");
-            int columns = int.Parse(Console.ReadLine());
+            //Console.Write("Enter the number of rows for the rectangle: ");
+            //int rows = int.Parse(Console.ReadLine());
+            int rows = PromptForInteger("Enter the number of rows for the rectangle: ");
+
+            //Console.Write("Enter the number of columns for the rectangle: ");
+            //int columns = int.Parse(Console.ReadLine());
+            int columns = PromptForInteger("Enter the number of columns for the rectangle: ");
 
             // Set a counter-controlled loop to print each row of the rectangle
             for (int currentRow = 1; currentRow <= rows; currentRow++)

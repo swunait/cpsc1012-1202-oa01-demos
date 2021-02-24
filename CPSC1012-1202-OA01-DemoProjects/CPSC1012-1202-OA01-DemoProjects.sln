@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuessNumber", "GuessNumber\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilledRectanglePattern", "FilledRectanglePattern\FilledRectanglePattern.csproj", "{6EA78688-EF93-4B36-9477-8A716988AEC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsProblems1", "LoopsProblems1\LoopsProblems1.csproj", "{2AD5DCB0-17C3-4A73-8622-A4418346497C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoopsProblems1", "LoopsProblems1\LoopsProblems1.csproj", "{2AD5DCB0-17C3-4A73-8622-A4418346497C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathTutor01", "MathTutor01\MathTutor01.csproj", "{D2F67F15-004C-4EA2-B176-532200F04735}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +81,10 @@ Global
 		{2AD5DCB0-17C3-4A73-8622-A4418346497C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AD5DCB0-17C3-4A73-8622-A4418346497C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AD5DCB0-17C3-4A73-8622-A4418346497C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F67F15-004C-4EA2-B176-532200F04735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F67F15-004C-4EA2-B176-532200F04735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F67F15-004C-4EA2-B176-532200F04735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F67F15-004C-4EA2-B176-532200F04735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{CF55C255-1F73-4E58-9F73-6833C9497C76} = {35CC72C4-0B34-460A-A710-AB5F269E4D5C}
 		{6EA78688-EF93-4B36-9477-8A716988AEC2} = {35CC72C4-0B34-460A-A710-AB5F269E4D5C}
 		{2AD5DCB0-17C3-4A73-8622-A4418346497C} = {35CC72C4-0B34-460A-A710-AB5F269E4D5C}
+		{D2F67F15-004C-4EA2-B176-532200F04735} = {35CC72C4-0B34-460A-A710-AB5F269E4D5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {371152C0-7764-447D-9046-16D89BF48283}
