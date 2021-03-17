@@ -60,7 +60,6 @@ namespace ArrayWithMethodsDemo
                     inArray = true;
                     // stop iterating through loop
                     index = array.Length;
-                    //break;
                 }
             }
             return inArray;
