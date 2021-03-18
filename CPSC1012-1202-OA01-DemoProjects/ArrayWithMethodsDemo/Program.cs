@@ -7,11 +7,11 @@ namespace ArrayWithMethodsDemo
         static void Main(string[] args)
         {
             // Generate 5 random numbers between 1 and 10
-            int[] numberArray1 = GenerateNumbers(1, 10, 5);
+            int[] numberArray1 = GenerateNumbers(1, 10, 8);
             // Display the array contents of numberArray1
             DisplayNumbers(numberArray1);
-            // Generate 3 random numbers between 18 and 65
-            int[] numberArray2 = GenerateNumbers(18, 65, 3);
+            // Generate 6 random numbers between 1 and 49
+            int[] numberArray2 = GenerateNumbers(1, 49, 6);
             // Display the array contents of numberArray2
             DisplayNumbers(numberArray2);
         }
@@ -22,11 +22,15 @@ namespace ArrayWithMethodsDemo
                                         int maxValue,
                                         int numberCount)
         {
+            // Declare and create a new array of int of size numberCount
             int[] numberArray = new int[numberCount];
             Random rand = new Random();
-            for (int index = 0; index < numberCount;)
+            // Populate each element in the array with random numbers between minValue and maxValue
+            for (int index = 0; index < numberCount; )  // we are not increment index by 1 since there could be duplicate numbers
             {
+                // Generate and store a random number between minValue and maxValue
                 int randomNumber = rand.Next(minValue, maxValue + 1);
+                // Check if the randon numer is already in our numberArray
                 bool duplicate = IsNumberInArray(numberArray, randomNumber);
                 if (!duplicate)
                 {

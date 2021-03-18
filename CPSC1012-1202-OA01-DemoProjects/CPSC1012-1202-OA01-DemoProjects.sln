@@ -57,11 +57,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AverageScoreArray", "Averag
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bar1", "Bar1\Bar1.csproj", "{014093DE-B73C-42B0-8B84-8FF45E27DB40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayWithMethodsDemo", "ArrayWithMethodsDemo\ArrayWithMethodsDemo.csproj", "{7DA5B6B7-A1EB-4EC6-A901-DA2A6D2702E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayWithMethodsDemo", "ArrayWithMethodsDemo\ArrayWithMethodsDemo.csproj", "{7DA5B6B7-A1EB-4EC6-A901-DA2A6D2702E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotMachineSimulator", "SlotMachineSimulator\SlotMachineSimulator.csproj", "{D30D7F36-1465-4A04-86D1-D6C2D9024B05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlotMachineSimulator", "SlotMachineSimulator\SlotMachineSimulator.csproj", "{D30D7F36-1465-4A04-86D1-D6C2D9024B05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVFileReader", "CSVFileReader\CSVFileReader.csproj", "{DC012625-7D13-4F12-B924-88A185E19D28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVFileReader", "CSVFileReader\CSVFileReader.csproj", "{DC012625-7D13-4F12-B924-88A185E19D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhlPlayers", "NhlPlayers\NhlPlayers.csproj", "{CC350C9A-FBBA-47F3-B1FA-B91FA0552A48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -173,6 +175,10 @@ Global
 		{DC012625-7D13-4F12-B924-88A185E19D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC012625-7D13-4F12-B924-88A185E19D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC012625-7D13-4F12-B924-88A185E19D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC350C9A-FBBA-47F3-B1FA-B91FA0552A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC350C9A-FBBA-47F3-B1FA-B91FA0552A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC350C9A-FBBA-47F3-B1FA-B91FA0552A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC350C9A-FBBA-47F3-B1FA-B91FA0552A48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -204,6 +210,7 @@ Global
 		{7DA5B6B7-A1EB-4EC6-A901-DA2A6D2702E2} = {A83639AB-1677-4CF9-A92D-FF7293E97D4B}
 		{D30D7F36-1465-4A04-86D1-D6C2D9024B05} = {A83639AB-1677-4CF9-A92D-FF7293E97D4B}
 		{DC012625-7D13-4F12-B924-88A185E19D28} = {A83639AB-1677-4CF9-A92D-FF7293E97D4B}
+		{CC350C9A-FBBA-47F3-B1FA-B91FA0552A48} = {A83639AB-1677-4CF9-A92D-FF7293E97D4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {371152C0-7764-447D-9046-16D89BF48283}
