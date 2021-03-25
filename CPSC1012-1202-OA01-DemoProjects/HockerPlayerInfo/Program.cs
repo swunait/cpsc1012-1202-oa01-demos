@@ -39,17 +39,68 @@ namespace HockerPlayerInfo
         /// <param name="playerList">The list of hocker players</param>
         static void DisplayHockerPlayers(List<HockeyPlayer> playerList)
         {
-            foreach(
-                HockeyPlayer    // Collection element data type
-                singlePlayer    // Variable name you assigned represent a element in the collection
-                in              // reserve keyword
-                playerList      // Collection of objects/values to iterate through
-                )
+            if (playerList.Count == 0)
             {
-                Console.WriteLine($"Player Name: {singlePlayer.Name}");
-                Console.WriteLine($"Player Number: {singlePlayer.Number}");
-                Console.WriteLine($"Player Position: {singlePlayer.Position}");
+                Console.WriteLine("There are currently no hockey players");
             }
+            else
+            {
+                foreach(
+                    HockeyPlayer    // Collection element data type
+                    singlePlayer    // Variable name you assigned represent a element in the collection
+                    in              // reserve keyword
+                    playerList      // Collection of objects/values to iterate through
+                    )
+                {
+                    Console.WriteLine($"Player Name: {singlePlayer.Name}");
+                    Console.WriteLine($"Player Number: {singlePlayer.Number}");
+                    Console.WriteLine($"Player Position: {singlePlayer.Position}");
+                }
+            }
+
+            
+        }
+
+        /// <summary>
+        /// Read the CSV file located in inputFilePath and for each line in the file
+        /// create a HockerPlayer object and set the properties using values from the line.
+        /// Add the new HockerPlayer object to the list
+        /// </summary>
+        /// <param name="playerList">List of hockery players</param>
+        /// <param name="inputFilePath">Locations of CSV file</param>
+        static void ReadFromFile(List<HockeyPlayer> playerList, string inputFilePath)
+        {
+            // Open the file for reading
+            StreamReader reader = new StreamReader(inputFilePath);
+            string lineText = null;
+            int counter = 0;    // To track number of records read
+            // Read one line at a time until end of file is reached
+            do
+            {
+                // Read the current line from the file
+                lineText = reader.ReadLine();
+                // If not EOF then extract the field values from the line
+                if (lineText != null)
+                {
+                    // Increment counter
+                    counter++;
+                    // Split the line into an array of values separated by the delimiter char comma
+                    string[] lineArray = lineText.Split(",");
+                    // Create a new HockeyPlayer object 
+                    HockeyPlayer currentHockerPlayer = new HockeyPlayer();
+                    // Assign the Name of the hockey player using the first value in the array
+                    currentHockerPlayer.Name = lineArray[0];
+                    // Assign the Number of the hockey player using the second value in the array
+                    currentHockerPlayer.Number = int.Parse(lineArray[1]);
+                    // Assign the Position of the hockey player using the third value in the array
+                    currentHockerPlayer.Position = lineArray[2];
+                    // Add the currentHockeyPlayer to playerList
+                    playerList.Add(currentHockerPlayer);
+                }
+            } while (lineText != null);
+            reader.Close();
+            Console.WriteLine($"Successfully added {counter} records.");
+
         }
 
         static void WriteToFile(List<HockeyPlayer> playerList, string outputFilePath)
@@ -64,7 +115,7 @@ namespace HockerPlayerInfo
                 writer.WriteLine(singlePlayer.Position);
             }
             writer.Close();
-
+            Console.WriteLine($"Successfully wrote data to ${outputFilePath}");
         }
 
         static void DisplayMainMenu()
@@ -79,7 +130,7 @@ namespace HockerPlayerInfo
         {
             // Declare and create a new List of HockeyPlayer
             List<HockeyPlayer> playerList = new List<HockeyPlayer>();
-            string outputFilePath = @"C:\temp\hockey-players.csv";
+            string dataFilePath = @"C:\temp\hockey-players.csv";
 
             int menuChoice; // To hold menu choice
             const int QuitProgramChoice = 0;
@@ -97,6 +148,12 @@ namespace HockerPlayerInfo
                         break;
                     case 2:
                         DisplayHockerPlayers(playerList);
+                        break;
+                    case 3:
+                        WriteToFile(playerList, dataFilePath);
+                        break;
+                    case 4:
+                        ReadFromFile(playerList, dataFilePath);
                         break;
                     case 0:
                         Console.WriteLine("Good-bye");
