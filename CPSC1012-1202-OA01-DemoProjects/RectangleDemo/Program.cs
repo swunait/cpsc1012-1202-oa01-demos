@@ -12,10 +12,44 @@ namespace RectangleDemo
 
             // Create a new Rectangle object named rectangle1
             Rectangle rectangle1 = new Rectangle();
-            // Change the width of the rectangle to 28
-            rectangle1.Width = 28;
-            // Change the length of the rectangle to 40
-            rectangle1.Length = 40;
+            bool validInput = false;
+            do
+            {
+                Console.Write("Enter the width of the rectangle: ");
+                try
+                {
+                    // Assign the Width of the rectangle using the user input value
+                    rectangle1.Width = double.Parse(Console.ReadLine());
+                    validInput = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Input value must be a number");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            } while (!validInput);
+
+            validInput = false;     // reset validInput
+            do
+            {
+                Console.Write("Enter the length of the rectangle: ");
+                try
+                {
+                    rectangle1.Length = double.Parse(Console.ReadLine());
+                    validInput = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Length must be a decimal value.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            } while (!validInput);
 
             // Create a new Rectangle object named rectangle2 with a width of 28 and length of 40
             //Rectangle rectangle2 = new Rectangle(40, 28);

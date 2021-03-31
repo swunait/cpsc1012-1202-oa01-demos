@@ -14,12 +14,36 @@ namespace RectangleDemo
         public double Length
         {
             get { return _length; }
-            set { _length = value; }
+            set 
+            { 
+                // Validate that the new value is greater than zero,
+                // otherwise throw an exception
+                if (value > 0 )
+                {
+                    _length = value;    // assign _length with new value
+                }
+                else
+                {
+                    throw new Exception($"Length must be greater than zero.");
+                }
+            }
         }
         public double Width
         {
             get { return _width; }
-            set { _width = value; }
+            set 
+            {   // Validate that the new value is greater than zero
+                // otherwise throw an exception.
+                if (value > 0)
+                {
+                    _width = value;
+                }
+                else
+                {
+                    throw new Exception("Width must be greater than zero.");
+                }
+                
+            }
         }
         // Define a no-argument default constructor
 
@@ -32,8 +56,12 @@ namespace RectangleDemo
         // Define a paramertized constructor for a given length and width
         public Rectangle(double newLength, double newWidth)
         {
-            _length = newLength;
-            _width = newWidth;
+            //_length = newLength;
+            //_width = newWidth;
+            // Assign the parameter values to the property instead of the 
+            // data fields to trigger validation if any
+            Length = newLength;
+            Width = newWidth;
         }
 
         // Define a instance-level method to return the area of this rectangle
