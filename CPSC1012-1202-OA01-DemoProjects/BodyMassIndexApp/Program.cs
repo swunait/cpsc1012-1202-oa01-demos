@@ -58,7 +58,6 @@ namespace BodyMassIndexApp
                 }
                 else
                 {
-                    //Age = value;
                     _age = value;
                 }
             }
@@ -75,7 +74,6 @@ namespace BodyMassIndexApp
                 }
                 else
                 {
-                    //Weight = value;
                     _weight = value;
                 }
             }
@@ -91,7 +89,6 @@ namespace BodyMassIndexApp
                 }
                 else
                 {
-                    //Height = value;
                     _height = value;
                 }
             }
@@ -141,11 +138,97 @@ namespace BodyMassIndexApp
             return BmiStatus;
         }
     }
-        class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Create a new BMI instance
+            BMI bmi1 = new BMI();
+            // Declare a booelan flag to track validInput
+            bool validInput = false;
+            // Prompt for and set the name of the BMI object bmi1
+            do
+            {
+                try
+                {
+                    Console.Write("Enter your name: ");
+                    bmi1.Name = Console.ReadLine();
+                    validInput = true;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            } while (!validInput);
+            // Reset validInput back to false
+            validInput = false;
+            do
+            {
+                try
+                {
+                    Console.Write("Enter your age: ");
+                    bmi1.Age = int.Parse(Console.ReadLine());
+                    validInput = true;
+                }
+                catch(FormatException)
+                {
+                    Console.WriteLine("Invalid input, you must enter a integer number.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            } while (!validInput);
+            // Reset validInput back to false
+            validInput = false;
+
+            validInput = false;
+            do
+            {
+                try
+                {
+                    Console.Write("Enter your weight in pounds: ");
+                    bmi1.Weight = double.Parse(Console.ReadLine());
+                    validInput = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid input, you must enter a decimal number.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            } while (!validInput);
+            // Reset validInput back to false
+            validInput = false;
+
+            do
+            {
+                try
+                {
+                    Console.Write("Enter your height in inches: ");
+                    bmi1.Height = double.Parse(Console.ReadLine());
+                    validInput = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid input, you must enter a integer number.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            } while (!validInput);
+
+            // Display a message showing the name, age, bmi value and status of the person.
+            //String name = bmi1.Name;
+            //int age = bmi1.Age;
+            double bmiValue = bmi1.BmiValue();
+            string bmiStatus = bmi1.Status();
+            Console.WriteLine($"The BMI for {bmi1.Name} is {bmiValue} {bmiStatus} "); ;
+
+
         }
     }
 }
