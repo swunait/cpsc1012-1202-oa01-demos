@@ -226,6 +226,7 @@ namespace BodyMassIndexApp
             //int age = bmi1.Age;
             double bmiValue = bmi1.BmiValue();
             string bmiStatus = bmi1.Status();
+
             Console.WriteLine($"The BMI for {bmi1.Name} is {bmiValue} {bmiStatus} "); ;
 
 
